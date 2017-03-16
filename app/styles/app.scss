@@ -3,4 +3,43 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+// @import 'bulma';
 @import 'box-sizing';
+@import 'resets';
+
+$c-primary: #96ca2d;
+$c-light: #b5e655;
+$c-secondary: #4bb5c1;
+$c-secondary-light: #7fc6bc;
+$c-white: #edf7f2;
+$c-pure-white: #fff;
+
+$m-gutter: 1rem;
+$m-max-width: 60rem;
+
+$font: 'Dosis', sans-serif;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $m-gutter;
+  background: $c-primary;
+
+  a {
+    color: $c-pure-white;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.nav-left {
+  padding: 0.5rem;
+}
+
+.nav-right {
+  display: flex;
+  padding: 0.5rem;
+}
