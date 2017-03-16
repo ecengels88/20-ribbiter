@@ -1,28 +1,24 @@
 <template lang="html">
   <div class="app">
     <nav class="nav">
-      <div class="nav-left">
-        <a href="/" class="nav-item">
-          <p>Ribbiter</p>
-        </a>
+      <div class="left">
+        <p class="left__nav-item">
+          <a href="/">Ribbiter</a>
+        </p>
       </div>
-      <div class="nav-right">
-        <a href="" class="nav-item">
-          <p>Ribblets</p>
-        </a>
-        <a href="" class="nav-item">
-          <p>Frogs</p>
-        </a>
-        <a href="" class="nav-item">
-          <p>Login</p>
-        </a>
+      <div class="right">
+        <p class="right__nav-item">
+          <a href="">Ribblets</a>
+        </p>
+        <p class="right__nav-item">
+          <a href="/users" class="nav-item">Frogs</a>
+        </p>
+        <p class="right__nav-item">
+          <a href="/login" class="nav-item">Login</a>
+        </p>
       </div>
     </nav>
-    <div class="section">
-      <div class="container">
-        <router-view></router-view>
-      </div>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 

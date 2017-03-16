@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: $font;
 }
 
 ul {
@@ -10,4 +11,14 @@ ul {
 img {
   align-self: center;
   max-width: 100%;
+}
+
+.section {
+  // height: 100vh;
+  padding: $m-gutter;
+  background: $c-white;
+}
+
+.container {
+  max-width: $m-max-width;
 }
