@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: $font;
+  background: $c-white;
 }
 
 ul {
@@ -14,9 +15,7 @@ img {
 }
 
 .section {
-  // height: 100vh;
   padding: $m-gutter;
-  background: $c-white;
 }
 
 .container {
