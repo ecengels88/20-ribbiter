@@ -6,8 +6,8 @@
           <div class="welcome">
             <h1 class="title">Welcome to Ribbiter!</h1>
             <div class="signbtn">
-              <button class="btn sign-up"><a href="/register">Sign Up</a></button>
-              <button class="btn sign-in"><a href="/login">Sign In</a></button>
+              <button class="btn"><a href="/register">Sign Up</a></button>
+              <button class="btn"><a href="/login">Sign In</a></button>
             </div>
           </div>
         </div>

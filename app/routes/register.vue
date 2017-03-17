@@ -3,8 +3,13 @@
     <div class="section">
       <div class="container">
         <div class="card">
+
           <div class="register">
-            <h1 class="register__title">Create an Account</h1>
+            <!-- Give this no padding and bg -->
+            <div class="register__heading">
+              <h1 class="register__title">Create an Account</h1>
+            </div>
+
             <form action="" class="form-inputs">
               <div class="input">
                 <p class="input__label">Username</p>
@@ -16,9 +21,13 @@
               </div>
               <div class="input">
                 <p class="input__label">Password</p>
-                <input type="text" class="input__bar password" placeholder="Password">
+                <input type="password" class="input__bar password" placeholder="Password">
               </div>
             </form>
+            <div class="form-buttons">
+              <button class="btn login">Login</button>
+              <button class="btn signup">Sign Up</button>
+            </div>
           </div>
         </div>
       </div>

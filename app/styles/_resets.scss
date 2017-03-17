@@ -22,3 +22,8 @@ img {
   max-width: $m-max-width;
   margin: 0 auto;
 }
+
+.card {
+  display: flex;
+  justify-content: space-around;
+}

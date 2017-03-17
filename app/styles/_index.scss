@@ -1,8 +1,3 @@
-.card {
-  display: flex;
-  justify-content: space-around;
-}
-
 .welcome {
   transform: translate(0, 80%);
   border: 1px solid $c-secondary-light;
@@ -32,6 +27,7 @@
   border-radius: 0.4rem;
   outline: none;
   background: $c-secondary;
+  font-size: 0.8rem;
 
   a {
     color: $c-pure-white;
