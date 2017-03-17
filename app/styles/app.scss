@@ -19,40 +19,4 @@ $font: 'Dosis', sans-serif;
 @import 'box-sizing';
 @import 'resets';
 @import 'nav';
-
-.card {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.welcome {
-  transform: translate(0, 100%);
-  border: 1px solid $c-secondary-light;
-  border-radius: 0.4rem;
-  color: $c-pure-white;
-  text-align: center;
-  box-shadow:  1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-.title {
-  margin: 0;
-  padding: 3rem 4rem;
-  border-bottom: 1px solid $c-secondary-light;
-  background: $c-primary;
-  font-size: 2.5rem;
-}
-
-.signbtn {
-  display: flex;
-  justify-content: space-around;
-  padding: $m-gutter;
-}
-
-.btn {
-  padding: 0.5rem $m-gutter;
-  border: 0;
-  border-radius: 0.4rem;
-  background: $c-secondary;
-  color: $c-pure-white;
-}
+@import 'index';
