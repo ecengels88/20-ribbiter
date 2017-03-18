@@ -13,15 +13,16 @@
             <form action="" class="form-inputs">
               <div class="input">
                 <p class="input__label">Username</p>
-                <input type="text" class="input__bar username" placeholder="Username">
+                <input type="text" class="input__bar username" placeholder="Username" v-model="username">
+                <p>{{}}</p>
               </div>
               <div class="input">
                 <p class="input__label">Email</p>
-                <input type="text" class="input__bar email" placeholder="Email">
+                <input type="text" class="input__bar email" placeholder="Email" v-model="email">
               </div>
               <div class="input">
                 <p class="input__label">Password</p>
-                <input type="password" class="input__bar password" placeholder="Password">
+                <input type="password" class="input__bar password" placeholder="Password" v-model="password">
               </div>
             </form>
             <div class="form-buttons">
