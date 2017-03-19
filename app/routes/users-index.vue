@@ -80,14 +80,18 @@
 
 <script>
 import store from '../store';
+import createResource from '../resources/user';
+const findAll = createResource.actionCreators.findAll
+
 export default {
   data() {
     return {
+      users: this.$select('users'),
     };
   },
 
   methods: {
-
+  // store.dispatch(findAll());
   },
 };
 </script>
