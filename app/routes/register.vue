@@ -42,7 +42,7 @@
 </template>
 
 <script>
-
+import store from '../store';
 import createResource from '../resources/user';
 const create = createResource.actionCreators.create;
 
