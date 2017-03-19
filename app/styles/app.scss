@@ -32,7 +32,36 @@ $font: 'Dosis', sans-serif;
 }
 
 .profile {
-  padding: $m-gutter 0;
+  margin: 0 -$m-gutter;
+  padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
+
+  &__item {
+    background: $c-pure-white;
+    margin: $m-gutter;
+    flex-basis: calc(100%/3 - 2rem);
+    flex-grow: 1;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .5);
+  }
+}
+
+.card-pic {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.user-id {
+  margin: 0;
+  padding: 0.5rem 0;
+  text-decoration: underline;
+  font-weight: bold;
+  color: $c-secondary-light;
 }
