@@ -17,61 +17,6 @@
               </div>
             </div>
           </div>
-          <div class="profile__item">
-            <div class="card">
-              <div class="card__image">
-                <img src="http://www.placecage.com/140/100" alt="" class="card-pic">
-              </div>
-              <div class="card__id">
-                <p class="name">Nicolas Cage</p>
-                <p class="user-id">Creeper69</p>
-              </div>
-            </div>
-          </div>
-          <div class="profile__item">
-            <div class="card">
-              <div class="card__image">
-                <img src="http://www.placecage.com/140/100" alt="" class="card-pic">
-              </div>
-              <div class="card__id">
-                <p class="name">Nicolas Cage</p>
-                <p class="user-id">Creeper69</p>
-              </div>
-            </div>
-          </div>
-          <div class="profile__item">
-            <div class="card">
-              <div class="card__image">
-                <img src="http://www.placecage.com/140/100" alt="" class="card-pic">
-              </div>
-              <div class="card__id">
-                <p class="name">Nicolas Cage</p>
-                <p class="user-id">Creeper69</p>
-              </div>
-            </div>
-          </div>
-          <div class="profile__item">
-            <div class="card">
-              <div class="card__image">
-                <img src="http://www.placecage.com/140/100" alt="" class="card-pic">
-              </div>
-              <div class="card__id">
-                <p class="name">Nicolas Cage</p>
-                <p class="user-id">Creeper69</p>
-              </div>
-            </div>
-          </div>
-          <div class="profile__item">
-            <div class="card">
-              <div class="card__image">
-                <img src="http://www.placecage.com/140/100" alt="" class="card-pic">
-              </div>
-              <div class="card__id">
-                <p class="name">Nicolas Cage</p>
-                <p class="user-id">Creeper69</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -80,8 +25,7 @@
 
 <script>
 import store from '../store';
-import createResource from '../resources/user';
-const findAll = createResource.actionCreators.findAll
+import userResource from '../resources/user';
 
 export default {
   data() {
@@ -90,10 +34,12 @@ export default {
     };
   },
 
+  created() {
+    const { actionCreators: { findAll } } =  userResource;
+    store.dispatch(findAll());
+  },
+
   methods: {
-    findAll() {
-      store.dispatch(findAll());
-    }
   },
 };
 </script>

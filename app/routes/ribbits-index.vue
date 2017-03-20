@@ -6,7 +6,7 @@
           <h2 class="heading">Recent Ribblets</h2>
         </div>
         <div class="wrapper">
-          <div class="card">
+          <div class="card card__ribblet">
             <div class="new-ribblet">
               <div class="register__heading">
                 <h1 class="register__title">New Ribblet</h1>
