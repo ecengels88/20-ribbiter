@@ -41,4 +41,8 @@
   font-size: 0.9rem;
   font-weight: bold;
   color: $c-secondary-light;
+
+  &__tweets {
+    font-size: $m-gutter;
+  }
 }

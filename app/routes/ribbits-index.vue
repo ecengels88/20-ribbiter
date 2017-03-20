@@ -35,6 +35,12 @@
                   Load New Ribblets
                 </button>
               </div>
+              <div class="ribblets">
+                <div class="ribblets__item">
+                  <p class="user-id user-id__tweets">ecengels88</p>
+                  <p class="user-tweets">This is a test.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -12,8 +12,8 @@
                 <img src="http://www.placecage.com/140/100" alt="" class="card-pic">
               </div>
               <div class="card__id">
-                <p class="name">{{ users.username }}</p>
-                <p class="user-id">{{ users.email }}</p>
+                <p class="name">{{ users.email }}</p>
+                <p class="user-id">{{ users.username }}</p>
               </div>
             </div>
           </div>

@@ -40,5 +40,7 @@ img {
 
   &__all-ribblets {
     flex-basis: 70%;
+    margin-left: $m-gutter;
+    padding: 0.5rem 0;
   }
 }
