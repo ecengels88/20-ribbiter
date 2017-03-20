@@ -35,10 +35,10 @@
                   Load New Ribblets
                 </button>
               </div>
-              <div class="ribblets" v-for="posts in posts.items">
+              <div class="ribblets" v-for="post in posts.items">
                 <div class="ribblets__item">
-                  <p class="user-id user-id__tweets">{{posts.username}}</p>
-                  <p class="user-tweets">{{posts.posts}}</p>
+                  <p class="user-id user-id__tweets">{{post.user.username}}</p>
+                  <p class="user-tweets">{{post.body}}</p>
                 </div>
               </div>
             </div>
@@ -52,6 +52,7 @@
 <script>
 import store from '../store';
 import postResource from '../resources/post';
+const create = postResource.actionCreators.create;
 
 export default {
   data() {
@@ -72,9 +73,15 @@ export default {
     create(formValues) {
       store.dispatch(create(formValues))
         .then(() => {
-          this.$router.push({ name: 'users' });
+          this.clear();
         }).catch(() => {});
     },
+
+    clear() {
+      this.formValues = {
+        body: '',
+      };
+    }
   },
 };
 </script>
