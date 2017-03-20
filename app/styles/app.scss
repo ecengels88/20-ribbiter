@@ -23,10 +23,6 @@ $font: 'Dosis', sans-serif;
 @import 'register';
 @import 'users';
 
-.wrapper {
-  display: flex;
-}
-
 .new-ribblet {
   border-radius: 0.4rem;
   background: $c-pure-white;

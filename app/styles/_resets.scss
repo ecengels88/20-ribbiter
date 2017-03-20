@@ -23,10 +23,29 @@ img {
   margin: 0 auto;
 }
 
-.card {
+.grid {
   display: flex;
-  justify-content: space-around;
-  padding: 0.5rem;
+  margin: 0 (-$m-gutter);
+
+  &__item {
+    flex-basis: calc(50% - #{$m-gutter} - #{$m-gutter});
+    flex-grow: 1;
+    margin: $m-gutter;
+
+    &--left {
+      flex-basis: calc(40% - #{$m-gutter} - #{$m-gutter});
+    }
+    &--right {
+      flex-basis: calc(60% - #{$m-gutter} - #{$m-gutter});
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.card {
 
   &__image {
     width: 8rem;
