@@ -8,7 +8,7 @@
       </div>
       <div class="right">
         <p class="right__nav-item">
-          <a href="">Ribblets</a>
+          <a href="/ribblets">Ribblets</a>
         </p>
         <p class="right__nav-item">
           <a href="/users" class="nav-item">Frogs</a>

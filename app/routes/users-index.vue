@@ -6,14 +6,14 @@
           <h2 class="heading">Frogs</h2>
         </div>
         <div class="profile">
-          <div class="profile__item">
+          <div class="profile__item" v-for="users in users.items">
             <div class="card">
               <div class="card__image">
                 <img src="http://www.placecage.com/140/100" alt="" class="card-pic">
               </div>
               <div class="card__id">
-                <p class="name">Nicolas Cage</p>
-                <p class="user-id">Creeper69</p>
+                <p class="name">{{ users.username }}</p>
+                <p class="user-id">{{ users.email }}</p>
               </div>
             </div>
           </div>
@@ -91,7 +91,9 @@ export default {
   },
 
   methods: {
-  // store.dispatch(findAll());
+    findAll() {
+      store.dispatch(findAll());
+    }
   },
 };
 </script>
