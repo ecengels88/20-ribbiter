@@ -11,19 +11,21 @@
             </div>
 
             <form action="" class="form-inputs">
-              <div class="input">
-                <p class="input__label">Email</p>
-                <input type="text" class="input__bar email" placeholder="Email" >
+              <div class="input-padding">
+                <div class="input">
+                  <p class="input__label">Email</p>
+                  <input type="text" class="input__bar email" placeholder="Email" >
+                </div>
+                <div class="input">
+                  <p class="input__label">Password</p>
+                  <input type="password" class="input__bar password" placeholder="Password" >
+                </div>
               </div>
-              <div class="input">
-                <p class="input__label">Password</p>
-                <input type="password" class="input__bar password" placeholder="Password" >
-              </div>
-            </form>
             <div class="form-buttons">
               <button class="btn signup">Register</button>
               <button class="btn login">Login</button>
             </div>
+          </form>
           </div>
         </div>
       </div>

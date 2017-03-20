@@ -16,24 +16,25 @@
             </div>
 
             <form action="" class="form-inputs" v-on:submit.prevent="create(formValues)">
-              <div class="input">
-                <p class="input__label">Username</p>
-                <input type="text" class="input__bar username" placeholder="Username" v-model="formValues.username">
-
+              <div class="input-padding">
+                <div class="input">
+                  <p class="input__label">Username</p>
+                  <input type="text" class="input__bar username" placeholder="Username" v-model="formValues.username">
+                </div>
+                <div class="input">
+                  <p class="input__label">Email</p>
+                  <input type="text" class="input__bar email" placeholder="Email" v-model="formValues.email">
+                </div>
+                <div class="input">
+                  <p class="input__label">Password</p>
+                  <input type="password" class="input__bar password" placeholder="Password" v-model="formValues.password">
+                </div>
               </div>
-              <div class="input">
-                <p class="input__label">Email</p>
-                <input type="text" class="input__bar email" placeholder="Email" v-model="formValues.email">
-              </div>
-              <div class="input">
-                <p class="input__label">Password</p>
-                <input type="password" class="input__bar password" placeholder="Password" v-model="formValues.password">
+              <div class="form-buttons">
+                <button class="btn login">Login</button>
+                <button class="btn signup">Register</button>
               </div>
             </form>
-            <div class="form-buttons">
-              <button class="btn login">Login</button>
-              <button class="btn signup">Register</button>
-            </div>
           </div>
         </div>
       </div>
@@ -51,7 +52,7 @@ export default {
     return {
       users: this.$select('users'),
       formValues: {
-        username:'',
+        username: '',
         email: '',
         password: '',
       }
@@ -59,8 +60,8 @@ export default {
   },
 
   methods: {
-    create() {
-      store.dispatch(create(this.formValues))
+    create(formValues) {
+      store.dispatch(create(formValues))
         .then(() => {
           this.$router.push({ name: 'users' });
         }).catch(() => {});

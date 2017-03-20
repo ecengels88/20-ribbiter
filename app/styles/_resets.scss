@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: $font;
   background: $c-white;
+  font-family: $font;
 }
 
 ul {
@@ -34,6 +34,11 @@ img {
   }
 
   &__ribblet {
-      padding: 0.5rem 0;
+    flex-basis: 30%;
+    padding: 0.5rem 0;
+  }
+
+  &__all-ribblets {
+    flex-basis: 70%;
   }
 }

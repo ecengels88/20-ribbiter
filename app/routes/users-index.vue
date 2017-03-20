@@ -34,7 +34,7 @@ export default {
     };
   },
 
-  created() {
+  mounted() {
     const { actionCreators: { findAll } } =  userResource;
     store.dispatch(findAll());
   },
