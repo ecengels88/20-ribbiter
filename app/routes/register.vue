@@ -63,7 +63,7 @@ export default {
     create(formValues) {
       store.dispatch(create(formValues))
         .then(() => {
-          this.$router.push({ name: 'users' });
+          this.$router;
         }).catch(() => {});
     },
   },

@@ -11,11 +11,11 @@
               <div class="register__heading">
                 <h1 class="register__title">New Ribblet</h1>
               </div>
-              <form action="" class="form-inputs">
+              <form action="" class="form-inputs" v-on:submit.prevent="create(formValues)">
                 <div class="input-padding">
                   <div class="input">
                     <p class="input__label">What's Going On?</p>
-                    <textarea name="" id="" cols="30" rows="5" class="input__bar textarea"></textarea>
+                    <textarea name="" id="" cols="30" rows="5" class="input__bar textarea" v-model="formValues.body"></textarea>
                   </div>
                 </div>
                 <div class="form-buttons">
@@ -35,10 +35,10 @@
                   Load New Ribblets
                 </button>
               </div>
-              <div class="ribblets">
+              <div class="ribblets" v-for="posts in posts.items">
                 <div class="ribblets__item">
-                  <p class="user-id user-id__tweets">ecengels88</p>
-                  <p class="user-tweets">This is a test.</p>
+                  <p class="user-id user-id__tweets">{{posts.username}}</p>
+                  <p class="user-tweets">{{posts.posts}}</p>
                 </div>
               </div>
             </div>
@@ -50,14 +50,31 @@
 </template>
 
 <script>
+import store from '../store';
+import postResource from '../resources/post';
+
 export default {
   data() {
     return {
+      posts: this.$select('posts'),
+      formValues: {
+        body: '',
+      }
     };
   },
 
-  methods: {
+  mounted() {
+    const { actionCreators: { findAll } } =  postResource;
+    store.dispatch(findAll());
+  },
 
+  methods: {
+    create(formValues) {
+      store.dispatch(create(formValues))
+        .then(() => {
+          this.$router.push({ name: 'users' });
+        }).catch(() => {});
+    },
   },
 };
 </script>
