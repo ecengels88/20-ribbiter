@@ -7,7 +7,7 @@
           <h2>There was an error creating this user</h2>
         </div>
 
-        <div class="card">
+        <div class="flex-center">
 
           <div class="register">
             <!-- Give this no padding and bg -->

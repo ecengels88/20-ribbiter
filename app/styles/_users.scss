@@ -16,7 +16,7 @@
   &__item {
     background: $c-pure-white;
     margin: $m-gutter;
-    flex-basis: calc(100%/3 - 2rem);
+    flex-basis: calc(100%/2 - 2rem);
     flex-grow: 1;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, .5);
   }

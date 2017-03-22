@@ -2,7 +2,7 @@
   <div class="">
     <div class="section">
       <div class="container">
-        <div class="card">
+        <div class="flex-center">
 
           <div class="register">
             <!-- Give this no padding and bg -->

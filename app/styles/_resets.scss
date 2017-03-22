@@ -45,21 +45,19 @@ img {
   }
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 .card {
+  display: flex;
+  // justify-content: center;
 
   &__image {
+    // padding: 0.5rem;
     width: 8rem;
     height: 8rem;
-  }
-
-  &__ribblet {
-    flex-basis: 30%;
-    padding: 0.5rem 0;
-  }
-
-  &__all-ribblets {
-    flex-basis: 70%;
-    margin-left: $m-gutter;
-    padding: 0.5rem 0;
   }
 }
