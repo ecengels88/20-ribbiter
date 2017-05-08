@@ -1,0 +1,30 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem $m-gutter;
+  background: $c-primary;
+  border-bottom: 1px solid $c-secondary-light;
+
+  a {
+    color: $c-pure-white;
+    text-decoration: none;
+  }
+}
+
+.left {
+  padding: 0.5rem 0;
+
+  &__nav-item {
+    margin: 0;
+  }
+}
+
+.right {
+  display: flex;
+  padding: 0.5rem;
+
+  &__nav-item {
+    margin: 0 0 0 $m-gutter;
+  }
+}

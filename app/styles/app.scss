@@ -3,4 +3,64 @@
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+// @import 'bulma';
+
+$c-primary: #96ca2d;
+$c-light: #b5e655;
+$c-secondary: #4bb5c1;
+$c-secondary-light: #7fc6bc;
+$c-white: #edf7f2;
+$c-pure-white: #fff;
+
+$m-gutter: 1rem;
+$m-max-width: 60rem;
+
+$font: 'Dosis', sans-serif;
 @import 'box-sizing';
+@import 'resets';
+@import 'nav';
+@import 'index';
+@import 'register';
+@import 'users';
+
+.new-ribblet {
+  border-radius: 0.4rem;
+  background: $c-pure-white;
+  box-shadow:  1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.textarea {
+  background: $c-white;
+  font-size: 0.8rem;
+}
+
+.all-ribblets {
+  width: 100%;
+  border-radius: 0.4rem;
+  background: $c-pure-white;
+  box-shadow:  1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.load-ribblets {
+  padding: 0.5rem;
+  border-bottom: 1px solid $c-secondary-light;
+}
+
+.load-btn {
+  width: 100%;
+  background: $c-white;
+  color: $c-secondary-light;
+}
+
+.ribblets {
+  border-bottom: 1px solid $c-secondary-light;
+
+  &__item {
+    padding: 0.5rem;
+  }
+}
+
+.user-tweets {
+  margin: 0;
+  font-size: 0.9rem;
+}

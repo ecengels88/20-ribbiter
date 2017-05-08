@@ -1,0 +1,36 @@
+.bananas {
+  border: 1px solid $c-secondary-light;
+  border-radius: 0.4rem;
+  color: $c-pure-white;
+  text-align: center;
+  box-shadow:  1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  margin: 0;
+  padding: 3rem 4rem;
+  border-bottom: 1px solid $c-secondary-light;
+  background: $c-primary;
+  font-size: 2.5rem;
+}
+
+.signbtn {
+  display: flex;
+  justify-content: space-around;
+  padding: $m-gutter;
+}
+
+.btn {
+  padding: 0.5rem $m-gutter;
+  border: 0;
+  border-radius: 0.4rem;
+  outline: none;
+  background: $c-secondary;
+  font-size: 0.8rem;
+  cursor: pointer;
+
+  a {
+    color: $c-pure-white;
+    text-decoration: none;
+  }
+}
